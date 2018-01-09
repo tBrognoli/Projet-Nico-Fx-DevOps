@@ -1,0 +1,105 @@
+<!DOCtYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UX[periment]1</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body onload="defilement(); calculHeure(); randomImg()">
+
+		<div id="ecran_2"><img id="troll" src=""></div>
+
+		<div id="alerte"></div>
+
+		<div id="ecran_1">
+
+			
+			<div id="head">
+				<div id="fenetre"></div>
+				<div id="entreprise">Aperoture Science </div>
+				<div id="IMIE">IMIE</div>
+				<div id="heure"><span id="spanHeure"></span></div>
+				<div id="date"><span id="spanDate"></span></div>
+			</div>
+			<div id="ItStart"> <input id="textdef" readonly ></div>
+			<div class="chargement" id="chargement1"></div>
+			<div class="chargement" id="chargement2"></div>
+			<div class="chargement" id="chargement3"></div>
+			<div class="chargement" id="chargement4"></div>
+
+			<div class="ecran" id="ecran_ip">
+				
+				<div id="saisir">
+					<h3>Saisir votre adresse IP :</h3>
+					<table id="tableau1">
+						<tr>
+				    	<td><input id="0" class="tableau" ;" onkeyup="recupIp(this.id);" maxlength="3" type="text" value="" /></td>
+				    	<td >.</td>
+				    	<td><input id="1" class="tableau" ;" onkeyup="recupIp(this.id);" maxlength="3" type="text" value="" /></td>
+				    	<td>.</td>
+				    	<td><input id="2" class="tableau" ;" onkeyup="recupIp(this.id);" maxlength="3" type="text" value="" /></td>
+				    	<td>.</td>
+				    	<td><input id="3" class="tableau" ;" onkeyup="recupIp(this.id);" maxlength="3" type="text" value="" /></td>
+				     	<td>/</td>
+				   		<td><input id="cidr" class="tableau" ;" onkeyup="recupIp(this.id);" maxlength="2" type="text" value="" /></td>
+						</tr>
+					</table>
+					<div class="valider"  onclick="javascript:valideIp()">Valider</div>
+				</div>
+
+
+			<div id="erreur">Veuillez rentrer une adresse IP et un cidr valide.</div>
+			<div id="reseau">
+				<h3>Votre Réseau</h3>
+	        	<ul id="texte1">
+	            	<li>Nombre de sous-réseaux disponibles : <span id="NbSSR0"></span></li>
+	            	<li>Nombre d'hôtes disponibles par sous-réseau : <span id="Nb0"></span></li>
+	            	<li>Masque de votre sous-réseau : <span id="mask"></span></li>
+	     		</ul>
+	    	</div>
+
+	     
+	       	<div id="sous-reseau">
+	       		<h3>Votre Sous-Réseau</h3>
+	        	<ul id="texte1">
+	                <li>Host-Range : <span id="PrHote0">   </span>.<span id="PrHote1">   </span>.<span id="PrHote2">   </span>.<span id="PrHote3">   </span>  /  <span id="DrHote0">   </span>.<span id="DrHote1">   </span>.<span id="DrHote2">   </span>.<span id="DrHote3">   </span></li>
+	                <li>Adresse du sous-réseau : <span id="SSR0">   </span>.<span id="SSR1">   </span>.<span id="SSR2">   </span>.<span id="SSR3">   </span></li>
+	                <li>Adresse de Broadcast du sous-réseau : <span id="broadcast0">   </span>.<span id="broadcast1">   </span>.<span id="broadcast2">   </span>.<span id="broadcast3">   </span></li>
+	        	</ul>
+	        </div>
+
+
+
+	    </div>
+
+	    <div class="ecran" id="ecran_infos">
+	        	<div id="infos_texte">
+	        		<p> Aperoture Science est une société de luxe dans le domaine du développement logiciel/réseau. Créée le 30 février 2008 à la Comté de Cholsan dans un village nommé "City 17" où tous les habitants s'appelaient Satochi. Lors d'un tirage au loto Satochi fut gagnant, la ville se transforma en champ de guerre, tous les Satochi s'entretuerent pour récupérer le gain... à l'exception d'un. L'argent lui a permis de mettre en place une cryptomonnaie très connue et d'investir dans de la dernière entreprise du village. La notre. Ce qui nous a permis de développer de nombreux jeux tel que DarkSaoul et Fappy Bird. Notre entreprise est en pleine essor depuis la sortie de "Style de Gangnam"  qui a fait connaitre la Corée toute entière. Nous avons ainsi pu collaborer avec des entreprises comme "Ubihard" ou bien "Bizard" et à l'heure d'aujourd'hui avec le laboratoire "ITSTART U X[periment]" et "Nico et FX projet DevOps".</p>
+	        	</div>
+	    </div>
+
+	    <div class="ecran" id="ecran_bot">
+	        <ul id="texte_bot">
+	                <li>Nombre d'hôtes total: </li><input class="input_bot" value="" type="text" id="nbHoteBot" onkeyup="recupIp(this.id);">
+	                <li>Nombre d'hôtes par sous-réseaux :</li><input class="input_bot" value="" type="text" id="tailleSSR" onkeyup="recupIp(this.id);">
+	                <li>Voulez-vous 15% de marge?</li><label class="container"><input type="checkbox" id="pourcentage" checked="checked"><span class="checkmark"></span></label>
+
+	        </ul>
+	        <div class="valider"  id="valider_bot" onclick="javascript:activationBot()">Valider</div>
+	        <div id="resultat_bot"><span id="resultatBot"></span></div>
+	        
+		</div>
+
+
+
+    </div>
+		
+    <div class="circle" id="infos" style = "margin-left:45.2%"></div>
+    <div class="circle" id="ip" style = "margin-left:3%"></div>
+    <div class="circle" id="bot" style = "margin-left:3.1%"></div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>

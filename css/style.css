@@ -1,0 +1,350 @@
+html, body {
+	
+	margin: 0;
+    height: 100%;
+	background-image: url("fond.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family : "Lucida Console";
+	color : #17A755;
+
+}
+	.ecran{
+	
+		height: 75%;
+		width: 100%;
+		float: left;
+
+	}
+
+	#ecran_1{
+		display: inline-block;
+		margin: 6% 20% 5.08% 31%;
+		width: 49%;
+		height: 57%;
+	}
+	#ecran_2{
+		margin: 3.3% 0% 0% 6.1%;
+		width: 9.33%;
+		height: 14.65%;
+		border-radius: 100%;
+		display: inline-block;
+		position: absolute;
+	}
+	#alerte{
+		margin: 43.9% 0% 0% 19.8%;
+		width: 1.75%;
+		height: 2.8%;
+		border-radius: 100%;
+		display: inline-block;
+		position: absolute;
+		background-color: red;
+		opacity: 0.7;
+	}
+	#erreur{
+		margin: 11% 0% 0% -15%;
+		width: 13.75%;
+		display: inline-block;
+		position: absolute;
+		text-align: center;
+		border-width : 2px;
+		border-style : solid;
+		border-color: #17A755;
+	}
+
+	#head {
+		font-size: 18px;
+		margin-bottom: 5%;
+		width: 95%;
+		height: 8%;
+	}
+	#fenetre {
+		display: inline-block;
+		margin: 0.2% 0% 0% 6%;
+		width: 16%;
+		font-size: 25px;
+		text-align: center;
+		float: left;
+	}
+	#entreprise {
+		display: inline-block;
+		margin: 2.5% 1% 0% 1.5%;
+		width: 19%;
+		height: 45%;
+		text-align: center;
+		font-size: 15px;
+	}
+	#IMIE {
+		display: inline-block;
+		width: 18%;
+		height: 45%;
+		text-align: center;
+	}
+	#heure {
+		display: inline-block;
+		width: 13%;
+		height: 45%;
+		text-align: center;
+	}
+	#date {
+		display: inline-block;
+		width: 20%;
+		height: 45%;
+		text-align: center;
+	}
+	#saisir {
+		display: inline-block;
+		margin: 5% 0% 2% 5%;
+		width: 85%;
+	}
+
+	#reseau {
+
+		margin: 5%;
+	}
+
+	#sous-reseau {
+		
+		margin: 5%;
+	}
+
+	li{
+		list-style-type: none;
+		margin-bottom: 1.5%;
+	}
+
+	#texte_bot li {
+		display: inline-block;
+		font-size: 18px;
+		margin: 3.5% 5% 0% 3.5%;
+
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	#texte1{
+		font-size: 15px;
+	}
+
+	#saisir h3{
+		display : inline-block;
+		float: left;
+
+	}
+	
+	#tableau1{
+		float : left;
+		border: 0px;
+	}
+
+	#ItStart{
+		position: absolute;
+		display : inline-block;
+		float: right;
+		margin: 25% 0% 0% 23.5%;
+		width: 21%;
+		text-align: center;
+		
+
+	}
+	#infos_texte {
+		margin: 0% 19% 0% 19%;
+		width: 60%;
+		height: 96%;
+		text-align: center;
+		border-width : 3px;
+		border-style : solid;
+		border-color: #17A755;
+		padding: 1%;
+		font-size: 16px;
+	}
+	.valider{
+		margin-left: 70%;
+		border-width : 2px;
+		border-style : solid;
+		border-color: #17A755;
+		width: 14%;
+		text-align: center;
+	}
+	#valider_bot{
+		margin: -1% 0% 0% 37%;
+		width: 6%;
+		position: absolute;
+	}
+	#resultat_bot{
+		margin: 6% 19% 0% 13%;
+		width: 75%;
+		height: 52%;
+		border-width : 2px;
+		border-style : solid;
+		border-color: #17A755;
+		overflow: auto; 
+		padding: 3%;
+	}
+
+
+	.circle {
+		width: 3.8%;
+		height: 6%;
+		border-radius: 50px;
+		display: inline-block;
+}
+
+	.circle:hover {
+		background: red;
+		opacity: 0.15;
+	}
+	.circle:active {
+		background: red;
+		opacity: 0.35;
+	}
+	.chargement {
+		position: absolute;
+		display : inline-block;
+		float: right;
+		background: #17A755;
+		width: 1.7%;
+		height: 4.2%;
+	}
+	#chargement1{
+		margin: 24.6% 0% 0% 13.4%;
+	}
+	#chargement2{
+		margin: 24.6% 0% 0% 15.2%;
+	}
+	#chargement3{
+		margin: 24.6% 0% 0% 17%;
+	}
+	#chargement4{
+		margin: 24.6% 0% 0% 18.8%;
+		width: 1.75%;
+	}
+
+	.valider:hover{
+		width: 16.5%;
+		margin-left: 68.5%;
+	}
+	.tableau {
+		border:none; 
+		width:30px;
+	}
+
+	input {
+		background : transparent;
+		color : #17A755;
+
+	}
+	#textdef{
+		border: none;
+		width:80%;
+	}
+	#troll{
+		display: inline-block;
+		width: 80%;
+		height : 80%;
+		margin : 13% 0% 0% 10%;
+		opacity: 0.9;
+	}
+	.input_bot{
+		border-width : 2px;
+		border-style : solid;
+		border-color: #17A755;
+	}
+	::-webkit-scrollbar
+
+	{
+
+	width: 15px;
+
+	margin-right: 3px;
+
+	}
+
+	::-webkit-scrollbar-track
+
+	{
+
+	-webkit-box-shadow: inset 0 0 7px rgba(0,0,0,1); 
+
+	border-radius: 10px;
+
+	}
+
+	::-webkit-scrollbar-thumb
+
+	{
+
+	border-radius: 10px;
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);
+
+	background-color: #17A755 ;
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  margin-left: 40%;
+  margin-top: -3%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background : transparent;
+  border-width : 2px;
+	border-style : solid;
+	border-color: #17A755;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  border-color: #17A755;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #17A755;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
